@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let GlobleVar= "print this";
+
+    function demo(){
+        console.log(GlobleVar);
+    }
+    demo();
+
+    // ----
+
+
+function demotwo(){
+
+    let Localvar= "print this";
+
+    console.log(Localvar);
+}
+demotwo();
+
+// ----
+
+function exampleFunction(par) {
+
+  console.log(par);
+}
+
+exampleFunction("parameter");
+
+// ----
+
+(function() {
+  var iifeVar = "iife scope";
+  console.log(iifeVar);
+})();
+
+// ----
+
+var x = 5;
+
+function example() {
+  var x = 25;
+  console.log(x);
+}
+
+example();
+
+console.log(x);
+
+// ----
+
+</script>
+</html>
